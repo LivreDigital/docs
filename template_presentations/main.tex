@@ -1,0 +1,179 @@
+
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage[printwatermark]{xwatermark}
+\usepackage{background}
+\usepackage{listings}
+
+\lstset{
+    basicstyle=\footnotesize,
+    numbers=left,
+    numberstyle=\footnotesize,
+    captionpos=b,
+    tabsize=2
+}
+
+\backgroundsetup{
+    placement=center,
+    scale=1.15,
+    contents={\url{https://www.livredigital.com}},
+    color=black!40,
+    angle=25,
+    opacity=0.25
+}
+
+\setbeamertemplate{background}{\BgMaterial}
+
+\usetheme{Warsaw}
+\setbeamertemplate{headline}{}
+
+% Title of your presentaiton
+\title{Presentation Title}
+
+% A subtitle of your presentation
+\subtitle{Subtitle of presentation}
+
+\author{Livre Digital}
+
+\institute
+{
+  On the web: \url{http://www.livredigital.com}\\
+  Socials: \href{https://www.twitter.com/LivreDigitalCom}{@LivreDigitalCom} | \href{https://www.github.com/livredigital}{Github} | \href{https://www.linkedin.com/company/livredigital}{LinkedIn}
+}
+
+% Last Revision
+\date{Last Modification: May, 2017}
+
+\begin{document}
+
+% Make title
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% License of document
+\begin{frame}{Document License}
+  Livre Digital, all rights reseved \copyright{} 2017.\\
+  \textbf{License:} Creative Commons Attribution - Share ALike 4.0\\
+  \small{\url{https://creativecommons.org/licenses/by-sa/4.0/legalcode}}\\[1cm]
+  You have the permission to:
+  \begin{itemize}
+      \item copy, distribute and present,
+      \item modify this document,
+      \item use this document commercialy;
+  \end{itemize}
+  To do this you MUST:
+  \begin{itemize}
+      \item Give credit to original author. \textbf{Atribution}.
+      \item Use the same license of the original document. \textbf{Share Alike}.
+  \end{itemize}
+\end{frame}
+
+% About Livre Digital
+\begin{frame}{Livre Digital}
+  \begin{minipage}{0.25\textwidth}
+    \includegraphics[width=\linewidth]{imgs/logo.png}\\
+    \small{Founded in 2017.}
+  \end{minipage}
+  \begin{minipage}{0.65\textwidth}
+    Livre Digital\\
+    \small{\emph{We focus our business in open source solutions}}\\
+    \url{http://www.livredigital.com}
+    \begin{itemize}
+        \item Experienced open source team;
+        \item Activities: Development, training, consulting and technical support
+    \end{itemize}
+  \end{minipage}
+  
+  \\[0.65cm]
+  
+  \begin{tabular}{r l}
+  Docs & \url{https://www.livredigital.com/docs}\\
+  Trainings & \url{https://www.livredigital.com/training}\\
+  Softwares & \url{https://www.livredigital.com/softwares}\\[1cm]
+  Socials & \href{https://www.twitter.com/LivreDigitalCom}{@LivreDigitalCom} | \href{https://www.github.com/livredigital}{Github} | \href{https://www.linkedin.com/company/livredigital}{LinkedIn}
+  \end{tabular}
+\end{frame}
+
+\begin{frame}{Agenda}
+  \linespread{1.5}
+  \tableofcontents
+\end{frame}
+
+\subsection[]{Theme One}
+
+\begin{frame}{Theme One}
+    \begin{itemize}
+        \item Hello
+        \item World
+    \end{itemize}
+\end{frame}
+
+\subsection[]{Theme Two}
+
+\begin{frame}{Theme One}
+    \begin{exampleblock}{Hey Title}
+        Theme Two
+    \end{exampleblock}
+\end{frame}
+
+\subsubsection{SubTheme One}
+
+\begin{frame}{SubTheme One}
+    \vfill
+    \begin{block}{Lets make a title here} 
+        SubTheme Two Here
+    \end{block}
+\end{frame}
+
+\subsubsection{SubTheme Two}
+
+\begin{frame}{SubTheme Two}
+    \parbox{.95\textwidth}{
+            \begin{minipage}[t]{0.50\linewidth}
+                \begin{tabular}{r p{0.65\textwidth}}
+                \textbf{\large dir} & \textbf{\large description}\\
+                \textbf{/} & root directory\\
+                \textbf{/bin} & binary files\\
+                \textbf{/dev} & device and peripheral\\
+                \textbf{/etc} & system config files\\
+                \textbf{/home} & users directory\\
+                \end{tabular}
+            \end{minipage}
+            \begin{minipage}[t]{0.40\linewidth}
+                \begin{tabular}{r p{0.8\textwidth}}
+                & \\
+                \textbf{/lib} & libraries and kernel modules\\
+                \textbf{/opt} & optional softwares\\
+                \textbf{/sbin} & super binary files\\
+                \textbf{/usr} & programs shareable content\\
+                \textbf{/var} & temporary/log files\\
+                \end{tabular}
+            \end{minipage}
+            \vspace{10pt}
+            }
+\end{frame}
+
+\subsection[]{Theme Three}
+
+\begin{frame}[fragile]{Theme Three}
+    \begin{alertblock}{This is a source code}
+        Lets see
+    \end{alertblock}
+    
+    \vspace{4cm}
+    
+    \begin{tabular}{c}
+    \begin{lstlisting}[language=C]
+    #include <stdio.h>
+    int main(int argc, char **argv) {
+        return 42;
+    }
+    \end{lstlisting}
+    \end{tabular}
+\end{frame}
+
+\end{document}
