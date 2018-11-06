@@ -1,0 +1,206 @@
+
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage[printwatermark]{xwatermark}
+\usepackage{background}
+\usepackage{listings}
+
+\lstset{
+    basicstyle=\footnotesize,
+    numbers=left,
+    numberstyle=\footnotesize,
+    captionpos=b,
+    tabsize=2
+}
+
+\backgroundsetup{
+    placement=center,
+    scale=1.15,
+    contents={\url{https://www.livredigital.com}},
+    color=black!40,
+    angle=25,
+    opacity=0.25
+}
+
+\setbeamertemplate{background}{\BgMaterial}
+
+\usetheme{Warsaw}
+\setbeamertemplate{headline}{}
+
+% Title of your presentaiton
+\title{Treinamento Online}
+
+% A subtitle of your presentation
+\subtitle{Como são realizados os cursos online da Livre Digital}
+
+\author{Livre Digital}
+
+\institute
+{
+  Nosso site: \url{http://www.livredigital.com}\\
+  Socials: \href{https://www.twitter.com/LivreDigitalCom}{@LivreDigitalCom} | \href{https://www.github.com/livredigital}{Github} | \href{https://www.linkedin.com/company/livredigital}{LinkedIn}
+}
+
+% Last Revision
+\date{Última Revisão: Maio, 2018.}
+
+\begin{document}
+
+% Make title
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% License of document
+\begin{frame}{Licença do Documento}
+  Livre Digital, todos os direitos reservados \copyright{} 2018.\\
+  \textbf{Licença:} Creative Commons Attribution - Share ALike 4.0\\
+  \small{\url{https://creativecommons.org/licenses/by-sa/4.0/legalcode}}\\[1cm]
+  Você tem permissão para:
+  \begin{itemize}
+      \item copiar, distribuir e apresentar,
+      \item modificar este documento,
+      \item usar este documento comercialmente;
+  \end{itemize}
+  Para isto você DEVE:
+  \begin{itemize}
+      \item Dar crédito ao autor original. \textbf{Atribution}.
+      \item Utilizar a mesma licença deste documento. \textbf{Share Alike}.
+  \end{itemize}
+\end{frame}
+
+% About Livre Digital
+\begin{frame}{Livre Digital}
+  \begin{minipage}{0.25\textwidth}
+    \includegraphics[width=\linewidth]{imgs/logo.png}\\
+    %\begin{center}
+      \small{Startup digital.}
+    %\end{center}
+  \end{minipage}
+  \begin{minipage}{0.7\textwidth}
+    Livre Digital\\
+    \small{\emph{Focando em soluções de código aberto}}\\
+    \url{http://www.livredigital.com}
+    \begin{itemize}
+        \item Experiência em código aberto e software livre;
+        \item Atividades: Desenvolvimento, treinamento, consultoria e suporte técnico.
+    \end{itemize}
+  \end{minipage}
+
+  \\[0.65cm]
+
+  \begin{tabular}{r l}
+  Documentos & \url{https://www.livredigital.com/docs}\\
+  Treinamentos & \url{https://www.livredigital.com/training}\\
+  Softwares & \url{https://www.livredigital.com/softwares}\\[1cm]
+  Socials & \href{https://www.twitter.com/LivreDigitalCom}{@LivreDigitalCom} | \href{https://www.github.com/livredigital}{Github} | \href{https://www.linkedin.com/company/livredigital}{LinkedIn}
+  \end{tabular}
+\end{frame}
+
+\begin{frame}{Agenda}
+  \linespread{2.5}
+  \tableofcontents
+\end{frame}
+
+\subsection[]{Curso online}
+
+\begin{frame}{Curso Online}
+  Na \textbf{Livre Digital} nós realizamos alguns treinamentos in loco mas em sua
+  maioria produzimos e realizamos conteúdos online. Estes treinamentos visam dar
+  ao aluno a oportunidade de escolher os melhores horários para acompanhar as aulas,
+  realizar os exercícios e as avaliações dos módulos.
+
+  \\~\
+
+  Os cursos online podem ser acessados a qualquer momento pelo no nosso website
+  ou baixados para o computador e/ou celular do aluno, geralmente disponibilizamos
+  todo o conteúdo escrito em formato de livro / e-book, há depender se ele é pago
+  ou gratuito.
+
+  \\~\
+
+  Todos os nossos cursos são constantemente revisados e melhorados por nossa equipe,
+  alunos que compraram cursos pagos tem sempre em nosso site o conteúdo atualizado
+  para ser baixado quando necessário.
+\end{frame}
+
+\subsection[]{Recursos do Treinamento}
+
+\begin{frame}{Recursos do Treinamento}
+  Para fornecer ao aluno um melhor aproveitamento, nossos cursos em sua maioria
+  disponibilizam os recursos listados abaixo:
+
+  \begin{itemize}
+    \item Apresentações de cada módulo.
+    \item Documentação extensa sobre o assunto.
+    \item Video aula com orientação em português e legendado.
+    \item Lista de exercícios para melhor aprendizado.
+    \item Avaliações para verificar o entendimento do aluno.
+    \item Livro / e-book sobre o tema.
+    \item Certificado digital para curriculum.
+    \item Suporte via chat / e-mail.
+  \end{itemize}
+
+  * Alguns destes recursos podem não estar disponíveis em cursos que fornecemos
+  gratuitamente para iniciantes.
+\end{frame}
+
+\subsection[]{Exercícios e Avaliações}
+
+\begin{frame}{Exercícios e Avaliações}
+  Em nossos treinamentos acreditamos que a realização de \textbf{exercícios} é fundamental
+  para o aprendizado, por isso cada um de nossos módulos independente do curso ser
+  gratuito ou pago contém uma série de exercícios.
+
+  \\~\
+
+  Obviamente cursos pagos contém exercícios mais complexos e bem elaborados além
+  da resolução dos mesmos disponível para os alunos em nosso site. O aluno pode
+  concluir os exercícios e nos enviar para que o nosso sistema automaticamente
+  valide se a resposta está correta e ele possa ganhar pontos.
+
+  \\~\
+
+  Em cursos pagos e alguns cursos gratuitos temos também \textbf{avaliações} contendo uma
+  série \textit{de 6 (seis) até 12 (doze) questões} em média para que o aluno que desejar
+  o \textbf{certificado digital} de conclusão do curso possa ser avaliado no seu entendimento
+  geral.
+\end{frame}
+
+\subsection[]{Conclusão e Certificados}
+
+\begin{frame}[fragile]{Conclusão e Certificados}
+  O aluno que acessa todos os módulos do curso pode optar por simplesmente fechar
+  seu navegador e ir direto para prática no seu projeto pessoal ou na sua empresa,
+  mas também caso deseje se esforçar um pouco mais pode concluir a \textit{pontuação mínima
+  necessária} para se obter um \textbf{certificado digital}.
+
+  \\~\
+
+  Este certificado digital pode ser utilizado para colocar em sua página no LinkedIn
+  ou até mesmo como comprovação de conhecimento e realização de um curso sobre
+  determinado assunto no seu curriculum vitae.
+
+  \\~\
+
+  Realizamos a validação do seu certificado em nosso website. Isto quer dizer que
+  o seu certificado fica sempre visível para quem tem o link, podendo servir de
+  comprovação para o seu cliente ou empregador de que foi feito o curso e obtido
+  o certificado.
+
+\end{frame}
+
+\begin{frame}{}
+  \begin{center}
+    \vfill
+    \Huge{Então, o que está esperando!?}
+    \vfill
+    \Huge{Acesse a próxima lição!}
+    \vfill
+  \end{center}
+\end{frame}
+
+\end{document}
